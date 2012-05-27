@@ -8,13 +8,14 @@
 Summary:	Package::DeprecationManager - manage deprecation warnings for your distribution
 Summary(pl.UTF-8):	Package::DeprecationManager - zarządzanie ostrzeżeniami o przestarzałych elementach
 Name:		perl-Package-DeprecationManager
-Version:	0.11
+Version:	0.13
 Release:	1
 License:	Artistic 2.0
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/D/DR/DROLSKY/Package-DeprecationManager-%{version}.tar.gz
-# Source0-md5:	d09664839b730997c591a5c891a2972b
+Source0:	http://www.cpan.org/modules/by-module/Package/Package-DeprecationManager-%{version}.tar.gz
+# Source0-md5:	f81ae3c0f9bcac048eb4bff348b79f67
 URL:		http://search.cpan.org/dist/Package-DeprecationManager/
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
