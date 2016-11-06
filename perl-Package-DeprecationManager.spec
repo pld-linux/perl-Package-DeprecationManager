@@ -8,23 +8,24 @@
 Summary:	Package::DeprecationManager - manage deprecation warnings for your distribution
 Summary(pl.UTF-8):	Package::DeprecationManager - zarządzanie ostrzeżeniami o przestarzałych elementach
 Name:		perl-Package-DeprecationManager
-Version:	0.13
+Version:	0.17
 Release:	1
-License:	Artistic 2.0
+License:	Artistic v2.0
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Package/Package-DeprecationManager-%{version}.tar.gz
-# Source0-md5:	f81ae3c0f9bcac048eb4bff348b79f67
+# Source0-md5:	7b46e92aaae3047ede3c67c1714ab88e
 URL:		http://search.cpan.org/dist/Package-DeprecationManager/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-List-MoreUtils
 BuildRequires:	perl-Params-Util
+BuildRequires:	perl-Scalar-List-Utils >= 1.33
 BuildRequires:	perl-Sub-Install
+BuildRequires:	perl-Sub-Name
 BuildRequires:	perl-Test-Fatal
 BuildRequires:	perl-Test-Requires
-BuildRequires:	perl-Test-Simple >= 0.88
+BuildRequires:	perl-Test-Simple >= 0.96
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -58,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes
 %{perl_vendorlib}/Package/DeprecationManager.pm
 %{_mandir}/man3/Package::DeprecationManager.3pm*
