@@ -9,7 +9,7 @@ Summary:	Package::DeprecationManager - manage deprecation warnings for your dist
 Summary(pl.UTF-8):	Package::DeprecationManager - zarządzanie ostrzeżeniami o przestarzałych elementach
 Name:		perl-Package-DeprecationManager
 Version:	0.17
-Release:	1
+Release:	2
 License:	Artistic v2.0
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Package/Package-DeprecationManager-%{version}.tar.gz
@@ -26,6 +26,7 @@ BuildRequires:	perl-Sub-Name
 BuildRequires:	perl-Test-Fatal
 BuildRequires:	perl-Test-Requires
 BuildRequires:	perl-Test-Simple >= 0.96
+BuildRequires:	perl-Test-Warnings
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
