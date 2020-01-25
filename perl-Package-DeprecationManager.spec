@@ -4,7 +4,6 @@
 #
 %define		pdir	Package
 %define		pnam	DeprecationManager
-%include	/usr/lib/rpm/macros.perl
 Summary:	Package::DeprecationManager - manage deprecation warnings for your distribution
 Summary(pl.UTF-8):	Package::DeprecationManager - zarządzanie ostrzeżeniami o przestarzałych elementach
 Name:		perl-Package-DeprecationManager
