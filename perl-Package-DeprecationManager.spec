@@ -13,10 +13,11 @@ License:	Artistic v2.0
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Package/Package-DeprecationManager-%{version}.tar.gz
 # Source0-md5:	7b46e92aaae3047ede3c67c1714ab88e
-URL:		http://search.cpan.org/dist/Package-DeprecationManager/
+URL:		https://metacpan.org/release/Package-DeprecationManager
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Params-Util
 BuildRequires:	perl-Scalar-List-Utils >= 1.33
